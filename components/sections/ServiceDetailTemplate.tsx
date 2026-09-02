@@ -169,8 +169,7 @@ export function ServiceDetailTemplate({ slug }: { slug: ServiceSlug }) {
               <p className="mt-3 text-white/60">Contact us for a quotation — pricing depends on the specific job.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button href="/request-service" className="bg-white text-ink hover:bg-white/90">
-                Request a Service
+<Button href="/request-service" className="!bg-white !text-ink hover:!bg-white/90">                Request a Service
               </Button>
               <Button href={buildWhatsAppLink(message)} variant="whatsapp" external>
                 WhatsApp Us
