@@ -86,9 +86,11 @@ export function ServiceRequestForm({ presetService }: { presetService?: string }
       Object.entries(values).forEach(([key, value]) => formData.append(key, value));
       files.forEach((file) => formData.append("photos", file));
 
-      const res = await fetch(endpoint, { method: "POST", body: formData });
-      if (!res.ok) throw new Error("Submission failed");
-
+await fetch(endpoint, { method: "POST", body: formData, mode: "no-cors" });
+      // Google Apps Script doesn't return CORS headers, so the browser
+      // can't read the response status — if fetch didn't throw, treat
+      // it as a success.
+      
       setStatus("success");
       trackEvent("service_request_submitted", { service: values.service });
       setValues(emptyValues);

@@ -36,6 +36,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_ACTIONS: true
+          NEXT_PUBLIC_FORM_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORM_ENDPOINT }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
