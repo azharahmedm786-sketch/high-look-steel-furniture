@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import type { ServiceImage } from "@/types";
 
-const BASE_PATH = "/high-look-steel-furniture";
+const BASE_PATH = "";
 
 const aspectClass: Record<ServiceImage["aspect"], string> = {
   square: "aspect-square",
