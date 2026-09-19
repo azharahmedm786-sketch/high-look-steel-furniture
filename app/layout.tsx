@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "New steel almirah orders, bulk manufacturing, cutting & preparing, repairs, leg installation.",
 
   icons: {
-    icon: "/high-look-steel-furniture/favicon.svg",
+    icon: "/favicon.svg",
   },
 };
 

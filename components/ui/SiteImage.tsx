@@ -13,7 +13,7 @@ import type { ServiceImage } from "@/types";
  * remove `basePath`/`assetPrefix` from next.config.mjs — nothing else
  * needs to change.
  */
-Replace: const BASE_PATH = "";
+const BASE_PATH = "";
 
 const aspectClass: Record<ServiceImage["aspect"], string> = {
   square: "aspect-square",
